@@ -7,5 +7,7 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: zmk-helpers
+      path: modules/zmk/helpers
   self:
     path: config

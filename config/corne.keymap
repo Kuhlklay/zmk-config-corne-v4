@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include "corne.combos.dtsi"
 #include "corne.custom.dtsi"
+#include "zmk-helpers/helper.h"
 
 / {
     keymap {
