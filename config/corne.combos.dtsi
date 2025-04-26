@@ -1,27 +1,27 @@
 #include <zmk-helpers/helper.h>
-#include "keymap.layout.h"
+// #include "keymap.layout.h"
 
 #define DEF 0
 
 /*                         KEY POSITIONS
   ╭─────────────────────────╮         ╭─────────────────────────╮
-  │ ATL TL4 TL3 TL2 TL1 TL0 │         │ TR0 TR1 TR2 TR3 TR4 ATR │
-  │ AML ML4 ML3 ML2 ML1 ML0 │         │ MR0 MR1 MR2 MR3 MR4 AMR │
-  │ ABL BL4 BL3 BL2 BL1 BL0 ╰───╮ ╭───╯ BR0 BR1 BR2 BR3 BR4 ABR │
-  ╰───────────────╮ HL1 HL0 HLT │ │ HRT HR0 HR1 ╭───────────────╯
+  │ --0 --1 --2 --3 --4 --5 │         │ --6 --7 --8 --9 -10 -11 │
+  │ -12 -13 -14 -15 -16 -17 │         │ -18 -19 -20 -21 -22 -23 │
+  │ -24 -25 -26 -27 -28 -29 ╰───╮ ╭───╯ -30 -31 -32 -33 -34 -35 │
+  ╰───────────────╮ -36 -37 -38 │ │ -39 -40 -41 ╭───────────────╯
                   ╰─────────────╯ ╰─────────────╯ */
 
 // äÄ (fast)
-ZMK_LEADER_SEQUENCE_4(altgrASpace,      &uc 00E4, <HR1 ML4 HRT>,     DEF)
-ZMK_LEADER_SEQUENCE_4(altgrShiftASpace, &uc 00C4, <HR1 HLT ML4 HRT>, DEF)
+ZMK_LEADER_SEQUENCE_4(altgrASpace,      &uc 00E4, 41 13 39,    DEF)
+ZMK_LEADER_SEQUENCE_4(altgrShiftASpace, &uc 00C4, 41 38 13 39, DEF)
 
 // áÁ
-ZMK_LEADER_SEQUENCE_4(altgrAQ,      &uc 00E1, <HR1 ML4 TL4>,     DEF)
-ZMK_LEADER_SEQUENCE_4(altgrShiftAQ, &uc 00C1, <HR1 HLT ML4 TL4>, DEF)
+// ZMK_LEADER_SEQUENCE_4(altgrAQ,      &uc 00E1, <HR1 ML4 TL4>,     DEF)
+// ZMK_LEADER_SEQUENCE_4(altgrShiftAQ, &uc 00C1, <HR1 HLT ML4 TL4>, DEF)
 
 // àÀ
-ZMK_LEADER_SEQUENCE_4(altgrAW,      &uc 00E0, <HR1 ML4 TL3>,     DEF)
-ZMK_LEADER_SEQUENCE_4(altgrShiftAW, &uc 00C0, <HR1 HLT ML4 TL3>, DEF)
+// ZMK_LEADER_SEQUENCE_4(altgrAW,      &uc 00E0, <HR1 ML4 TL3>,     DEF)
+// ZMK_LEADER_SEQUENCE_4(altgrShiftAW, &uc 00C0, <HR1 HLT ML4 TL3>, DEF)
 
 // äÄ
 // ZMK_LEADER_SEQUENCE_4(altgrAF,      &uc 00E4, RALT A F,       DEF)
