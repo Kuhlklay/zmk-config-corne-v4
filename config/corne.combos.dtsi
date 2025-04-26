@@ -1,4 +1,4 @@
-#include <zmk-helpers/helpers.h>
+#include <zmk-helpers/helper.h>
 
 #define COMBO_TERM 1500
 #define COMBO_IDLE 20
