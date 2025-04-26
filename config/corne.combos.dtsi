@@ -1,7 +1,7 @@
 #include <zmk-helpers/helper.h>
 
-#define COMBO_TERM 1500
-#define COMBO_IDLE 20
+// #define COMBO_TERM 1500
+// #define COMBO_IDLE 20
 #define DEF        0
 
 // äÄ (fast)
