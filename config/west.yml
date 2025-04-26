@@ -8,6 +8,6 @@ manifest:
       revision: main
       import: app/west.yml
     - name: zmk-helpers
-      path: modules/zmk/helpers
+      url: https://github.com/urob/zmk-helpers.git
   self:
     path: config

@@ -1,3 +1,5 @@
+#include "zmk-helpers.dtsi"
+
 #define COMBO_TERM_SHORT 1500
 #define COMBO_TERM_LONG  2000
 #define COMBO_IDLE       20
