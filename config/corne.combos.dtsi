@@ -1,19 +1,43 @@
-#include <zmk-helpers/combo_helpers.h>
+#include <zmk-helpers/helpers.h>
 
-#define COMBO_TERM_SHORT 1500
-#define COMBO_TERM_LONG  2000
-#define COMBO_IDLE       20
-#define DEF              0
-#define RALTL            RALT LSHFT
+#define COMBO_TERM 1500
+#define COMBO_IDLE 20
+#define DEF        0
 
-ZMK_COMBO(altgr_a_space,       &uc 00E4, RALT A SPACE,  DEF, COMBO_TERM_SHORT, COMBO_IDLE)
-ZMK_COMBO(altgr_shift_a_space, &uc 00C4, RALTL A SPACE, DEF, COMBO_TERM_LONG,  COMBO_IDLE)
+// äÄ (fast)
+ZMK_LEADER_SEQUENCE_4(altgrASpace,      &uc 00E4, RALT A SPACE,       DEF)
+ZMK_LEADER_SEQUENCE_4(altgrShiftASpace, &uc 00C4, RALT LSHFT A SPACE, DEF)
 
-ZMK_COMBO(altgr_a_q,           &uc 00E4, RALT A Q,      DEF, COMBO_TERM_SHORT, COMBO_IDLE)
-ZMK_COMBO(altgr_shift_a_q,     &uc 00E4, RALTL A Q,     DEF, COMBO_TERM_LONG,  COMBO_IDLE)
+// áÁ
+ZMK_LEADER_SEQUENCE_4(altgrAQ,      &uc 00E1, RALT A Q,       DEF)
+ZMK_LEADER_SEQUENCE_4(altgrShiftAQ, &uc 00C1, RALT LSHFT A Q, DEF)
 
-ZMK_COMBO(altgr_a_w,           &uc 00E4, RALT A W,      DEF, COMBO_TERM_SHORT, COMBO_IDLE)
-ZMK_COMBO(altgr_shift_a_w,     &uc 00E4, RALTL A W,     DEF, COMBO_TERM_LONG,  COMBO_IDLE)
+// àÀ
+ZMK_LEADER_SEQUENCE_4(altgrAW,      &uc 00E0, RALT A W,       DEF)
+ZMK_LEADER_SEQUENCE_4(altgrShiftAW, &uc 00C0, RALT LSHFT A W, DEF)
 
-ZMK_COMBO(altgr_a_f,           &uc 00E4, RALT A F,      DEF, COMBO_TERM_SHORT, COMBO_IDLE)
-ZMK_COMBO(altgr_shift_a_f,     &uc 00E4, RALTL A F,     DEF, COMBO_TERM_LONG,  COMBO_IDLE)
+// äÄ
+ZMK_LEADER_SEQUENCE_4(altgrAF,      &uc 00E4, RALT A F,       DEF)
+ZMK_LEADER_SEQUENCE_4(altgrShiftAF, &uc 00C4, RALT LSHFT A F, DEF)
+
+// ßẞ (fast)
+ZMK_LEADER_SEQUENCE_4(altgrSSpace,      &uc 00DF, RALT S SPACE,       DEF)
+ZMK_LEADER_SEQUENCE_4(altgrShiftSSpace, &uc 1E9E, RALT LSHFT S SPACE, DEF)
+
+// ßẞ
+ZMK_LEADER_SEQUENCE_4(altgrSQ,      &uc 00DF, RALT S Q,       DEF)
+ZMK_LEADER_SEQUENCE_4(altgrShiftSQ, &uc 1E9E, RALT LSHFT S Q, DEF)
+
+
+// Deprecated ( OLD ), do not use...
+// ZMK_COMBO(altgr_a_space,       &uc 00E4, RALT A SPACE,  DEF, COMBO_TERM_SHORT, COMBO_IDLE)
+// ZMK_COMBO(altgr_shift_a_space, &uc 00C4, RALTL A SPACE, DEF, COMBO_TERM_LONG,  COMBO_IDLE)
+//
+// ZMK_COMBO(altgr_a_q,           &uc 00E4, RALT A Q,      DEF, COMBO_TERM_SHORT, COMBO_IDLE)
+// ZMK_COMBO(altgr_shift_a_q,     &uc 00E4, RALTL A Q,     DEF, COMBO_TERM_LONG,  COMBO_IDLE)
+//
+// ZMK_COMBO(altgr_a_w,           &uc 00E4, RALT A W,      DEF, COMBO_TERM_SHORT, COMBO_IDLE)
+// ZMK_COMBO(altgr_shift_a_w,     &uc 00E4, RALTL A W,     DEF, COMBO_TERM_LONG,  COMBO_IDLE)
+//
+// ZMK_COMBO(altgr_a_f,           &uc 00E4, RALT A F,      DEF, COMBO_TERM_SHORT, COMBO_IDLE)
+// ZMK_COMBO(altgr_shift_a_f,     &uc 00E4, RALTL A F,     DEF, COMBO_TERM_LONG,  COMBO_IDLE)
