@@ -5,28 +5,28 @@
 #define DEF        0
 
 // äÄ (fast)
-ZMK_LEADER_SEQUENCE_4(altgrASpace,      &uc 00E4, RALT A SPACE,       DEF)
-ZMK_LEADER_SEQUENCE_4(altgrShiftASpace, &uc 00C4, RALT LSHFT A SPACE, DEF)
+ZMK_LEADER_SEQUENCE_4(altgrASpace,      &uc 00E4, <RALT A SPACE>,       DEF)
+ZMK_LEADER_SEQUENCE_4(altgrShiftASpace, &uc 00C4, <RALT LSHFT A SPACE>, DEF)
 
 // áÁ
-ZMK_LEADER_SEQUENCE_4(altgrAQ,      &uc 00E1, RALT A Q,       DEF)
-ZMK_LEADER_SEQUENCE_4(altgrShiftAQ, &uc 00C1, RALT LSHFT A Q, DEF)
+ZMK_LEADER_SEQUENCE_4(altgrAQ,      &uc 00E1, <RALT A Q>,       DEF)
+ZMK_LEADER_SEQUENCE_4(altgrShiftAQ, &uc 00C1, <RALT LSHFT A Q>, DEF)
 
 // àÀ
-ZMK_LEADER_SEQUENCE_4(altgrAW,      &uc 00E0, RALT A W,       DEF)
-ZMK_LEADER_SEQUENCE_4(altgrShiftAW, &uc 00C0, RALT LSHFT A W, DEF)
+ZMK_LEADER_SEQUENCE_4(altgrAW,      &uc 00E0, <RALT A W>,       DEF)
+ZMK_LEADER_SEQUENCE_4(altgrShiftAW, &uc 00C0, <RALT LSHFT A W>, DEF)
 
 // äÄ
-ZMK_LEADER_SEQUENCE_4(altgrAF,      &uc 00E4, RALT A F,       DEF)
-ZMK_LEADER_SEQUENCE_4(altgrShiftAF, &uc 00C4, RALT LSHFT A F, DEF)
+ZMK_LEADER_SEQUENCE_4(altgrAF,      &uc 00E4, <RALT A F>,       DEF)
+ZMK_LEADER_SEQUENCE_4(altgrShiftAF, &uc 00C4, <RALT LSHFT A F>, DEF)
 
 // ßẞ (fast)
-ZMK_LEADER_SEQUENCE_4(altgrSSpace,      &uc 00DF, RALT S SPACE,       DEF)
-ZMK_LEADER_SEQUENCE_4(altgrShiftSSpace, &uc 1E9E, RALT LSHFT S SPACE, DEF)
+ZMK_LEADER_SEQUENCE_4(altgrSSpace,      &uc 00DF, <RALT S SPACE>,       DEF)
+ZMK_LEADER_SEQUENCE_4(altgrShiftSSpace, &uc 1E9E, <RALT LSHFT S SPACE>, DEF)
 
 // ßẞ
-ZMK_LEADER_SEQUENCE_4(altgrSQ,      &uc 00DF, RALT S Q,       DEF)
-ZMK_LEADER_SEQUENCE_4(altgrShiftSQ, &uc 1E9E, RALT LSHFT S Q, DEF)
+ZMK_LEADER_SEQUENCE_4(altgrSQ,      &uc 00DF, <RALT S Q>,       DEF)
+ZMK_LEADER_SEQUENCE_4(altgrShiftSQ, &uc 1E9E, <RALT LSHFT S Q>, DEF)
 
 
 // Deprecated ( OLD ), do not use...
