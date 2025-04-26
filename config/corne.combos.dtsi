@@ -1,0 +1,18 @@
+#define COMBO_TERM_SHORT 1500
+#define COMBO_TERM_LONG  2000
+#define COMBO_IDLE       20
+#define DEF              0
+#define RALTL            RALT LSHFT
+#define SPC              SPACE
+
+ZMK_COMBO(altgr_a_space,       &uc 00E4, RALT A SPC,  DEF, COMBO_TERM_SHORT, COMBO_IDLE)
+ZMK_COMBO(altgr_shift_a_space, &uc 00C4, RALTL A SPC, DEF, COMBO_TERM_LONG,  COMBO_IDLE)
+
+ZMK_COMBO(altgr_a_q,           &uc 00E4, RALT A Q,    DEF, COMBO_TERM_SHORT, COMBO_IDLE)
+ZMK_COMBO(altgr_shift_a_q,     &uc 00E4, RALTL A Q,   DEF, COMBO_TERM_LONG,  COMBO_IDLE)
+
+ZMK_COMBO(altgr_a_w,           &uc 00E4, RALT A W,    DEF, COMBO_TERM_SHORT, COMBO_IDLE)
+ZMK_COMBO(altgr_shift_a_w,     &uc 00E4, RALTL A W,   DEF, COMBO_TERM_LONG,  COMBO_IDLE)
+
+ZMK_COMBO(altgr_a_f,           &uc 00E4, RALT A F,    DEF, COMBO_TERM_SHORT, COMBO_IDLE)
+ZMK_COMBO(altgr_shift_a_f,     &uc 00E4, RALTL A F,   DEF, COMBO_TERM_LONG,  COMBO_IDLE)
