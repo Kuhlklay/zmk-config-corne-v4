@@ -1,4 +1,4 @@
-#include "zmk-helpers.dtsi"
+#include <zmk-helpers/combo_helpers.h>
 
 #define COMBO_TERM_SHORT 1500
 #define COMBO_TERM_LONG  2000
