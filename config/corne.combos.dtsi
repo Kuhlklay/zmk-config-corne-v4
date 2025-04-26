@@ -1,7 +1,7 @@
 #include <zmk-helpers/helper.h>
 // #include "keymap.layout.h"
 
-#define DEF 0
+// #define DEF 0
 
 /*                         KEY POSITIONS
   ╭─────────────────────────╮         ╭─────────────────────────╮
@@ -12,8 +12,8 @@
                   ╰─────────────╯ ╰─────────────╯ */
 
 // äÄ (fast)
-ZMK_LEADER_SEQUENCE_4(altgrASpace,      &uc 00E4, 41 13 39,    DEF)
-ZMK_LEADER_SEQUENCE_4(altgrShiftASpace, &uc 00C4, 41 38 13 39, DEF)
+ZMK_LEADER_SEQUENCE_4(altgrASpace,      &uc 00E4, 41 13 39,    0)
+ZMK_LEADER_SEQUENCE_4(altgrShiftASpace, &uc 00C4, 41 38 13 39, 0)
 
 // áÁ
 // ZMK_LEADER_SEQUENCE_4(altgrAQ,      &uc 00E1, <HR1 ML4 TL4>,     DEF)
