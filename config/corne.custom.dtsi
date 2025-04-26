@@ -1,1 +1,3 @@
+#include <zmk-helpers/helper.h>
+
 ZMK_UNICODE_PAIR(c_qmem,  N0, N0, N2, N1,  N0, N0, N3, F)
