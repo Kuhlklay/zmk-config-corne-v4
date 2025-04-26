@@ -12,16 +12,16 @@
                   ╰─────────────╯ ╰─────────────╯ */
 
 // äÄ (fast)
-ZMK_LEADER_SEQUENCE_4(altgrASpace,      &uc 00E4, HR1 ML4 HRT,     DEF)
-ZMK_LEADER_SEQUENCE_4(altgrShiftASpace, &uc 00C4, HR1 HLT ML4 HRT, DEF)
+ZMK_LEADER_SEQUENCE_4(altgrASpace,      &uc 00E4, <HR1 ML4 HRT>,     DEF)
+ZMK_LEADER_SEQUENCE_4(altgrShiftASpace, &uc 00C4, <HR1 HLT ML4 HRT>, DEF)
 
 // áÁ
-ZMK_LEADER_SEQUENCE_4(altgrAQ,      &uc 00E1, HR1 ML4 TL4,     DEF)
-ZMK_LEADER_SEQUENCE_4(altgrShiftAQ, &uc 00C1, HR1 HLT ML4 TL4, DEF)
+ZMK_LEADER_SEQUENCE_4(altgrAQ,      &uc 00E1, <HR1 ML4 TL4>,     DEF)
+ZMK_LEADER_SEQUENCE_4(altgrShiftAQ, &uc 00C1, <HR1 HLT ML4 TL4>, DEF)
 
 // àÀ
-ZMK_LEADER_SEQUENCE_4(altgrAW,      &uc 00E0, HR1 ML4 TL3,     DEF)
-ZMK_LEADER_SEQUENCE_4(altgrShiftAW, &uc 00C0, HR1 HLT ML4 TL3, DEF)
+ZMK_LEADER_SEQUENCE_4(altgrAW,      &uc 00E0, <HR1 ML4 TL3>,     DEF)
+ZMK_LEADER_SEQUENCE_4(altgrShiftAW, &uc 00C0, <HR1 HLT ML4 TL3>, DEF)
 
 // äÄ
 // ZMK_LEADER_SEQUENCE_4(altgrAF,      &uc 00E4, RALT A F,       DEF)
