@@ -73,8 +73,8 @@
         };
 };
 
-ZMK_LEADER_SEQUENCE_4(altgrASpace,      <&uc 00E4>, <41 13 39>,    <0>)
-ZMK_LEADER_SEQUENCE_4(altgrShiftASpace, <&uc 00C4>, <41 38 13 39>, <0>)
-
-ZMK_LEADER_SEQUENCE_4(altgrAQ,      <&uc 00E1>, <41 13 1>,    <0>)
-ZMK_LEADER_SEQUENCE_4(altgrShiftAQ, <&uc 00C1>, <41 13 13 1>, <0>)
+// ZMK_LEADER_SEQUENCE_4(altgrASpace,      <&uc 00E4>, <41 13 39>,    <0>)
+// ZMK_LEADER_SEQUENCE_4(altgrShiftASpace, <&uc 00C4>, <41 38 13 39>, <0>)
+//
+// ZMK_LEADER_SEQUENCE_4(altgrAQ,      <&uc 00E1>, <41 13 1>,    <0>)
+// ZMK_LEADER_SEQUENCE_4(altgrShiftAQ, <&uc 00C1>, <41 13 13 1>, <0>)
