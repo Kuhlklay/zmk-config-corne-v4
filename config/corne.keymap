@@ -11,6 +11,23 @@
 // #include "corne.custom.dtsi"
 #include <zmk-helpers/helper.h>
 
+#define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH) \
+    ZMK_LAYER(name, LT RT LM RM LB RB LH RH)
+
+ZMK_BEHAVIOR_TAP_DANCE(ck_home, bindings = <KC_HOME>, <KC_END>;)
+
+ZMK_BASE_LAYER(Base,
+    //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮                       ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
+       &kp ESC    &kp Q      &kp W      &kp F      &kp P      &kp G,                             &kp J      &kp L      &kp U      &kp Y      &none      &kp TAB,
+    //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤                       ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+       &kp LCTRL  &kp A      &kp R      &kp S      &kp T      &kp D,                             &kp H      &kp N      &kp E      &kp I      &kp O      &kp RET,
+    //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤                       ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+       &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B,                             &kp K      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &ck_home,
+    //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┼──────────╮ ╭──────────┼──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
+                                                   &kp LGUI   &kp LCTRL  &kp LSHFT,   &kp SPACE  &kp BSPC   &kp RALT
+    //                                            ╰──────────┴──────────┴──────────╯ ╰──────────┴──────────┴──────────╯
+)
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -19,9 +36,9 @@
             display-name = "Default";
             bindings = <
             //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮                       ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
-               &kp TAB    &kp Q      &kp W      &kp F      &kp P      &kp G                              &kp J      &kp L      &kp U      &kp Y      &none      &kp BSPC
+               &kp TAB    &kp Q      &kp W      &kp F      &kp P      &kp G                              &kp J      &kp L      &kp U      &kp Y      &none      &kp TAB
             //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤                       ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-               &kp LCTRL  &kp A      &kp R      &kp S      &kp T      &kp D                              &kp H      &kp N,     &kp E      &kp I      &kp O      &kp SQT
+               &kp LCTRL  &kp A      &kp R      &kp S      &kp T      &kp D                              &kp H      &kp N      &kp E      &kp I      &kp O      &kp RET
             //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤                       ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
                &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B                              &kp K      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp ESC
             //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┼──────────╮ ╭──────────┼──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
@@ -70,7 +87,7 @@
 //                extra_3 {
 //                        status = "reserved";
 //                };
-        };
+    };
 };
 
 // ZMK_LEADER_SEQUENCE_4(altgrASpace,      <&uc 00E4>, <41 13 39>,    <0>)
